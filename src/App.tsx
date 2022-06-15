@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button, message } from 'antd'
+
+function showMessage() {
+  message.success('这是一条消息')
+}
 
 function App() {
   return (
@@ -18,6 +23,7 @@ function App() {
         >
           Learn React
         </a>
+        <Button type="primary" onClick={showMessage}>按钮</Button>
       </header>
     </div>
   );
