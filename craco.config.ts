@@ -1,7 +1,7 @@
 const config = {
   babel: {
-    plugins: [["import", { libraryName: "antd", style: "css" }]],
+    plugins: [['import', { libraryName: 'antd', style: 'css' }]],
   },
-};
+}
 
-export default config;
+export default config

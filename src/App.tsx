@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
 import { Button, message } from 'antd'
 
 function showMessage() {
@@ -23,10 +23,12 @@ function App() {
         >
           Learn React
         </a>
-        <Button type="primary" onClick={showMessage}>按钮</Button>
+        <Button type="primary" onClick={showMessage}>
+          按钮
+        </Button>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
