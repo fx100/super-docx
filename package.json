@@ -16,6 +16,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
     "moment": "^2.29.3",
     "prettier": "^2.7.0",
     "react": "^18.2.0",
@@ -29,7 +31,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +46,9 @@
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx,cjs,mjs,ts,tsx,cts,mts}": "eslint --fix"
   },
   "browserslist": {
     "production": [
